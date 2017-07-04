@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#282828</color>
+    <color name="colorPrimaryDark">#181818</color>
+    <color name="colorPrimaryLightDark">#202020</color>
+    <color name="colorAccent">#262626</color>
+
+    <color name="rippelColor">#FFFFFF</color>
+</resources>

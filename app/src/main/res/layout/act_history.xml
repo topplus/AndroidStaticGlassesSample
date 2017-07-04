@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.com.staticglasses.ui.HistoryActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="历史" />
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/history_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@android:color/white"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        tools:listitem="@layout/item_history" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="76dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clipChildren="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:alpha="0.0"
+            android:background="#f4f4f4"
+            android:src="@android:drawable/presence_video_away"
+            app:backgroundTint="#f4f4f4"
+            app:backgroundTintMode="multiply"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            app:rippleColor="#C4C4C4" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_video"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="10dp"
+            android:alpha="0.0"
+            android:background="#f4f4f4"
+            android:src="@android:drawable/ic_menu_today"
+            android:visibility="gone"
+            app:backgroundTint="#f4f4f4"
+            app:backgroundTintMode="multiply"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            app:rippleColor="#C4C4C4" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/bottom_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_bottom_layout_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/main_history"
+            android:textColor="#0000ff"
+            android:textSize="@dimen/main_btn" />
+
+        <Button
+            android:id="@+id/recordVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/main_record"
+            android:textColor="#0000ff"
+            android:textSize="@dimen/main_btn" />
+
+
+        <Button
+            android:id="@+id/glasses_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/main_list"
+            android:textColor="#0000ff"
+            android:textSize="@dimen/main_btn" />
+    </LinearLayout>
+
+    <example.com.staticglasses.ui.view.WheelView
+        android:id="@+id/wheelview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bottom_btn_layout"
+        android:overScrollMode="never" />
+
+    <TextView
+        android:id="@+id/main_tip"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_above="@+id/wheelview"
+        android:gravity="center"
+        android:text="@string/main_tip"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/main_btn" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_tip">
+
+        <topplus.com.staticglassvr.StaticGlassTexture
+            android:id="@+id/staticGlass"
+            android:layout_width="@dimen/main_viewport"
+            android:layout_height="@dimen/main_viewport"
+            android:layout_centerInParent="true" />
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/imagePreview"
+            android:layout_width="@dimen/main_viewport"
+            android:layout_height="@dimen/main_viewport"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/anim_view"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignLeft="@+id/imagePreview"
+            android:layout_alignRight="@+id/imagePreview"
+            android:background="#b205afd6"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/anim_move_line"
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:layout_alignLeft="@+id/imagePreview"
+            android:layout_alignRight="@+id/imagePreview"
+            android:background="@drawable/flashlight"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_view"
+        android:layout_width="@dimen/main_pb_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/loading"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/main_pb_pb"
+            android:layout_height="@dimen/main_pb_pb"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/main_loading"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/main_pb_loading_text" />
+    </LinearLayout>
+</RelativeLayout>

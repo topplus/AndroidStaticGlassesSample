@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/recycler_item_size"
+    android:layout_height="@dimen/recycler_item_size"
+    android:orientation="vertical">
+
+    <example.com.staticglasses.ui.view.RippleView
+        android:id="@+id/iv_ripple_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFE1E1E1"
+        android:padding="1px"
+        app:rv_alpha="168"
+        app:rv_color="#FFC1C1C1"
+        app:rv_rippleDuration="100">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+    </example.com.staticglasses.ui.view.RippleView>
+
+
+</RelativeLayout>

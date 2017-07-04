@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StaticGlasses</string>
+    <string name="page6_note_step_1">请先把手机竖直放置</string>
+    <string name="page6_note_step0">请把头部放在竖线中间，点击录制按钮</string>
+    <string name="page6_note_step1">请跟随蓝色竖线，左右转动头部</string>
+    <string name="main_tip">请选择一个眼镜类型</string>
+    <string name="main_record">录制</string>
+    <string name="main_history">历史</string>
+    <string name="main_list">列表</string>
+    <string name="main_loading">正在加载眼镜模型，请稍等！</string>
+</resources>
