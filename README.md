@@ -23,9 +23,9 @@
 ## 接入流程 ##
 ### 依赖库导入 ###
 
-基础库: [commonutils-release.aar](https://github.com/topplus/AndroidStaticGlassesSample/raw/master/commonutils-release/commonutils-release.aar)，需添加到Android项目中。
-渲染库: [render-release.aar](https://github.com/topplus/AndroidStaticGlassesSample/raw/master/render-release/render-release.aar)，需添加到Android项目中。
-眼镜库: [staticglasses-release.aar](https://github.com/topplus/AndroidStaticGlassesSample/raw/master/staticglasses-release/staticglasses-release.aar)，需添加到Android项目中。
+* 基础库: [commonutils-release.aar](https://github.com/topplus/AndroidStaticGlassesSample/raw/master/commonutils-release/commonutils-release.aar)，需添加到Android项目中。
+* 渲染库: [render-release.aar](https://github.com/topplus/AndroidStaticGlassesSample/raw/master/render-release/render-release.aar)，需添加到Android项目中。
+* 眼镜库: [staticglasses-release.aar](https://github.com/topplus/AndroidStaticGlassesSample/raw/master/staticglasses-release/staticglasses-release.aar)，需添加到Android项目中。
 
 ### 授权认证 ###
 
