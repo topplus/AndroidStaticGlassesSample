@@ -33,10 +33,6 @@
 说明：申请 client_id 和 client_secret 后调用此函数获得授权。可通过商务合作邮箱sales@topplusvision.com获得client_id 和 client_secret
 
 
-### SDK初始化 ###
-
-在检测之前调用com.topplusvision.topface.TopFace的initWithFocus(Context context, float focus)初始化检测上下文
-
 ## 接口定义和使用说明 ##
 
 [文档](https://github.com/topplus/AndroidStaticGlassesSample/raw/master/doc/眼镜虚拟试戴Android+SDK人脸录制试戴文档.pdf)
